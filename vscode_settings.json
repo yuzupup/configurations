@@ -1,0 +1,68 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.formatOnPaste": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+
+    // Plugins
+    "vim.sneak" : true,
+    "vim.sneakUseIgnorecaseAndSmartcase" : true,
+
+    "vim.easymotion": true,
+
+    // Vim Settings
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.highlightedyank.enable": true,
+    "vim.useCtrlKeys": false,
+
+    // Vim Bindings
+    "vim.normalModeKeyBindings": 
+    [
+        {
+            // easymotion jump to n-character sequence
+            "before": [ "<leader>", "`"],
+            "after": ["<leader>", "<leader>", "/"]
+        },
+        {
+            "before": [ "<leader>", "r"],
+            "commands": [ "editor.action.rename" ]
+        },
+        {
+            "before": [ "<leader>", "d"],
+            "commands": [ "editor.action.revealDefinition" ]
+        },
+        {
+            "before": [ "<leader>", "f"],
+            "commands": [ "references-view.findReferences" ]
+        },
+        {
+            "before": [ "<leader>", "f"],
+            "commands": [ "workbench.action.findInFiles" ]
+        },
+        {
+            "before": [ "<leader>", "["],
+            "commands": [ "workbench.action.navigateBack" ]
+        },
+        {
+            "before": [ "<leader>", "["],
+            "commands": [ "workbench.action.navigateForward" ]
+        },
+        {
+            "before": [ "<leader>", "c"],
+            "commands": [ "editor.action.formatDocument" ]
+        },
+
+        
+    ],
+    "vim.insertModeKeyBindings": 
+    [
+
+    ],
+    "vim.visualModeKeyBindings": 
+    [
+
+    ]
+}
