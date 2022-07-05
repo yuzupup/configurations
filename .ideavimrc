@@ -1,3 +1,6 @@
+" Plugin dependencies:
+" * IdeaVim-easymotion
+" * AceJump
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
