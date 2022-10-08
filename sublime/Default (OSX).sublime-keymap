@@ -1,0 +1,5 @@
+[
+	// These only work on ST4:
+	{ "keys": ["shift", "shift"], "command": "goto_symbol_in_project" },
+	{ "keys": ["ctrl", "ctrl"], "command": "show_overlay", "args": {"overlay": "command_palette"} }
+]
