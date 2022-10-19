@@ -22,15 +22,28 @@ set ignorecase
 set smartcase
 
 let g:argtextobj_pairs="[:],(:),<:>"
-map <leader>j <Plug>(easymotion-s)
+map <leader><Esc> :noh<cr>
+map ` <Plug>(easymotion-s)
 map <leader>r <Action>(RenameElement)
 map <leader>d <Action>(GotoDeclaration)
 map <leader>u <Action>(FindUsages)
 map <leader>f <Action>(FindInPath)
-map <leader>s <Action>(SearchEverywhere)
+map <leader>i <Action>(ReSharperGotoImplementation)
+
 map <leader>[ <Action>(Back)
 map <leader>] <Action>(Forward)
 map <leader>, <Action>(PreviousTab)
 map <leader>. <Action>(NextTab)
-map <leader>c <Action>(ShowReformatFileDialog)
+
+" Code Cleanup
+map <leader>c <Action>(ReformatCode)
+map <leader><C-c> <Action>(ShowReformatFileDialog)
+
+" Bookmarks (mneuomic: "b")
+map <leader>b <Action>(ToggleBookmark)
+map <leader><C-b> <Action>(ShowBookmarks)
+
+" Scratch Files (mneunomic: "s")
+map <leader><C-s> <Action>(Scratch.ShowFilesPopup)
+
 map <leader>/ :source ~/.ideavimrc<cr>:echo ".ideavimrc reloaded"<cr>
